@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block main %}
+    <div>
+      <form method="POST" action="/edit">
+        <h5 id="edit-line1">Welcome to the "Edit" section, where you can effortlessly rewrite your past memories </h5>
+        <h4 id="edit-line2">Getting Started:</h4>
+        <h5 id="edit-line3">1. Select the date you want to edit your diary</h5>
+        <h5 id="edit-line4">2. Rewrite your past memories</h5>
+        <h5 id="edit-line5">3. Click the "Save" button</h5>
+        <input type="number" id="edit-date" name="date" placeholder="Date" autofocus min="1" max="31">
+        <input type="number" id="edit-month" name="month" placeholder="Month" autofocus min="1" max="12">
+        <input type="number" id="edit-year" name="year" placeholder="Year" autofocus min="2000">
+        <textarea class="form-control" autofocus autocomplete="off" id="edit-text" aria-label="With textarea" name="text" placeholder="Enter your feelings here"></textarea>
+        <button type="submit" class="btn btn-primary" id="edit-button">Save</button>
+      </form>
+    </div>
+{% endblock %}

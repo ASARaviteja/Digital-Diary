@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add
+{% endblock %}
+
+{% block main %}
+    <h2 id="add-heading"><b>Dear Diary,</b></h2>
+    <form action="/add" method="post">
+        <textarea class="form-control" autofocus autocomplete="off" aria-label="With textarea" id="add-text" name="text" placeholder="Enter your feelings here"></textarea>
+        <button class="btn btn-primary" type="submit" id="add-button" >Save</button>
+    </form>
+{% endblock %}

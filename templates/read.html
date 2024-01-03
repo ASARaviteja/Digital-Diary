@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Read
+{% endblock %}
+
+{% block main %}
+    <div>
+      <form method="POST" action="/read">
+        <h5 id="read-line1">Welcome to the "Read" section, where you can effortlessly revisit your past by unlocking the entries of your digital diary. </h5>
+        <h4 id="read-line2">Getting Started:</h4>
+        <h5 id="read-line3">1. Select the date you want to explore</h5>
+        <h5 id="read-line4">2. Click the "Search" button</h5>
+        <h5 id="read-line5">3. Reconnect with your past through the entries that come to life.</h5>
+        <input type="number" id="read-date" name="date" placeholder="Date" autofocus min="1" max="31">
+        <input type="number" id="read-month" name="month" placeholder="Month" autofocus min="1" max="12">
+        <input type="number" id="read-year" name="year" placeholder="Year" autofocus min="2000">
+        <button type="submit" class="btn btn-primary" id="read-button">Search</button>
+      </form>
+    </div>
+{% endblock %}

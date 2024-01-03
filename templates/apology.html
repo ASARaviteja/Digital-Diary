@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <!-- https://memegen.link/ -->
+    <img alt="{{ top }}" class="border img-fluid" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://thumbs.dreamstime.com/b/very-angry-cat-narrowed-green-eye-looks-haughty-evil-very-angry-cat-narrowed-green-eye-looks-haughty-evil-139276761.jpg&width=400" title="{{ top }}">
+{% endblock %}
